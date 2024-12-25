@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<title>Insert</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
+	<link href="../css/full.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Prompt:400,600&amp;subset=thai" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="card">
+					<div class="card-header">
+						<h1>อัพโหลดรูปภาพ</h1>
+					</div>
+					<div class="card-body">
+						<p>ศูนย์บริการ : <span id="service_center"></span></p>
+						<p>สาขา : <span id="branch"></span></p>
+						<p>วันที่ทำการ : <span id="currentDate"></span></p>
+						<p>ชื่อผู้ใช้งาน : <span id="username"></span></p>
+            <br>
+
+						<form class="needs-validation" novalidate id="formUploadPic">
+							<h5>ยี่ห้อรถ : TOYOTA</h5>
+							<input type="hidden" name="brand_id" value="0001">
+							<select name="model_id" id="model_id" class="form-control" required>
+								<option value="">กรุณาเลือกรุ่นรถ</option>
+								<!-- Models will be loaded by jQuery -->
+							</select>
+							<br>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="ป้ายทะเบียนรถ" id="license_plate" name="license_plate" required>
+								<div class="invalid-feedback">กรุณากรอกป้ายทะเบียนรถ</div>
+							</div>
+							<select name="province_id" id="province_id" class="form-control" required>
+								<option value="">กรุณาเลือกจังหวัด</option>
+								<!-- Provinces will be loaded by jQuery -->
+							</select>
+							<br>
+							<div class="input-group mb-3">
+								<input type="number" class="form-control" placeholder="เลขไมล์" id="mile_number" name="mile_number" min="0" required>
+								<div class="invalid-feedback">กรุณาใส่เลขไมล์</div>
+							</div>
+              <br>
+              <label for="formFile" class="form-label"><h5>รูปถ่ายคอยล์เย็น</h5></label>
+              <input class="form-control" type="file" id="formFile" accept="image/*" placeholder="">
+
+							<p>ขนาดรูป: 640*480 pixel<br>ไฟล์: .bmp, .jpg, .png</p>
+							<hr>
+							<p align="center">
+								<button id="submitBtn" type="submit" class="btn btn-success btn-lg">ยืนยัน</button>
+								<button type="button" class="btn btn-danger btn-lg" onclick="window.location.href = 'profile.html';">ยกเลิก</button>
+							</p>
+              </div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery and Bootstrap Scripts -->
+	<script src="../jquery/jquery.min.js"></script>
+	<script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/needValidation.js" ></script>
+  <script src="../js/apiService.js" defer></script>
+  <script src="../js/pages/insert.js" defer></script>
+</body>
+</html>

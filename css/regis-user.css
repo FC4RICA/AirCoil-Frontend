@@ -1,0 +1,147 @@
+.bg-gradient-primary {
+  width: 100%;
+	height: 100%;
+	color:rgb(0, 0, 0);
+	background: linear-gradient(-45deg, rgb(255, 251, 0), #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+body{
+	background-image: url("background.jpg");
+	width: 100%;
+	height: auto;
+}
+
+.btn-insert-barnd{
+	position: absolute;
+	right: 10%;
+}
+
+.text-center{
+  text-align: center;
+  margin-bottom:30px;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 700px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.btn-color{
+	color: white;
+}
+
+.nav-color{
+	background-color: #ff8716!important;
+}
+
+.regis-new-user {
+  width: 100%;
+  max-width: 750px;
+  padding: 15px;
+  margin: auto;
+}
+
+.regis-new-user .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.regis-new-user  .form-control:focus {
+  z-index: 2;
+}
+
+
+form.regis-new-user .form-control-user {
+  margin-bottom: -1px;
+	font-size: 1rem;
+	margin-bottom: 20px;
+	border-radius: 10rem;
+}
+
+form.regis-new-user .d-block {
+  margin-bottom: -1px;
+	font-size: 0.8rem;
+	margin-bottom: 20px;
+	border-radius: 10rem;
+}
+
+
+form.regis-new-user .btn-submit {
+  font-size: 0.8rem;
+  border-radius: 10rem;
+  padding: 0.75rem 1rem;
+}

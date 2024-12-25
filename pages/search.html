@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Search</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
+  <link href="../css/full.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,600&amp;subset=thai" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+          <div class="card-header">
+            <h1 id="searchTitle">ค้นหาผลการประเมิน</h1>
+          </div>
+          <div class="card-body">
+            <form class="needs-validation" novalidate id="searchForm">
+              <!-- License plate -->
+              <label for="license_plate">ป้ายทะเบียนรถ</label>
+              <input type="text" class="form-control" id="license_plate" name="license_plate"
+                placeholder="กรุณากรอกป้ายทะเบียนที่ต้องการค้นหา" required>
+              <div class="invalid-feedback"> กรุณากรอกป้ายทะเบียน </div>
+              <br>
+              <!-- Select province -->
+              <label for="province_id">จังหวัด</label>
+              <select name="province_id" id="province_id" class="form-control" required>
+                <option value="">- กรุณาเลือกจังหวัด -</option>
+              </select>
+              <div class="invalid-feedback"> กรุณาเลือกจังหวัด </div>
+              <br>
+              <p align="center">
+                <button id="btnSubmit" class="btn btn-success btn-lg" type="submit">
+                  ค้นหา
+                </button>
+                <button type="button" class="btn btn-danger btn-lg" onclick="window.location.href='profile.html';">
+                  ยกเลิก
+                </button>
+              </p>
+            </form>
+            <div>
+              <p align="center" id="error"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../jquery/jquery.min.js"></script>
+  <script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/needValidation.js"></script>
+  <script src="../js/apiService.js" defer></script>
+  <script src="../js/pages/search.js" defer></script>
+</body>
+
+</html>

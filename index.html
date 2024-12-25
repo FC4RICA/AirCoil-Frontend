@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>EDL: Log In</title>
+  <script type="text/JavaScript" src="./js/sha512.js"></script>
+  <script type="text/JavaScript" src="./js/forms.js"></script>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./bootstrap-5.3.3/css/bootstrap.min.css" />
+  <link href="./css/full.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,600&subset=thai" rel="stylesheet" />
+  <style>
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      top: 100;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: 80px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 200px;
+    }
+
+    form label {
+      display: inline-flex;
+      text-align: left;
+      width: 100px;
+    }
+
+    r {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" align="center">
+        <img src="./images/logo_l.png" width="75%" magin-top="50px" alt="" /><br /><br />
+        <form class="needs-validation form-group" novalidate id="login_form">
+          <div class="d-flex justify-content-center">
+            <label for="username" class="form-label">ชื่อผู้ใช้งาน :</label><input type="text" class="form-control" name="username" id="username" required />
+          </div>
+          <br />
+          <div class="d-flex justify-content-center">
+            <label for="password" class="form-label" >รหัสผ่าน :</label><input type="password" class="form-control" name="password" id="password" value=""
+              required />
+          </div>
+          <br />
+          <p align="center" id="error">
+          </p>
+          <input type="submit" class="btn btn-danger" />
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./jquery/jquery.min.js"></script>
+  <script src="./bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/needValidation.js" ></script>
+  <script src="./js/apiService.js" defer></script>
+  <script src="./js/pages/index.js" defer></script>
+</body>
+
+</html>

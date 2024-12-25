@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+
+  <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
+  <link href="../css/full.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/pages/edlResult.css">
+  <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+</head>
+
+<body id="HTMLtoPDF">
+  <div class="container pt-4 pb-4" id="form1">
+    <div class="row mb-4">
+      <!-- Job Details -->
+      <div class="col-12">
+        <div class="card" id="report">
+          <div class="card-body vstack gap-2">
+            <div class="row">
+              <div class="row">
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">วันที่ล้าง : </div>
+                  <div class="col" id="job-date"></div></div>
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">Job No. :</div>
+                  <div class="col" id="job-id"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">ทะเบียนรถ :</div>
+                  <div class="col" id="license-plate"></div>
+                </div>
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">จังหวัด :</div>
+                  <div class="col" id="province"></div>
+                </div>
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">เลขไมล์ :</div>
+                  <div class="col" id="mileage"></div>
+                </div>
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">ยี่ห้อรถ :</div>
+                  <div class="col" id="car-brand"></div>
+                </div>
+                <div class="col-12 col-lg-4 row mb-2">
+                  <div class="label-col">รุ่นรถ :</div>
+                  <div class="col" id="car-model"></div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="vstack gap-3">
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6" id="edlscore-container" >
+                  <div class="edlscore-description">
+                    <br><br>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-12 col-lg-6">
+                  <div class="aircoil-image-container">
+                    <img id="aircoil-image" alt="Aircoil image">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="row justify-content-end">
+              <div class="col-4 col-lg-2">
+                <img src="../images/logo_l.png" width="100%" alt="EDL">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center">
+      <a role="button" href="./profile.html" class="btn btn-danger btn-lg">หน้าหลัก</a>
+      <!--<button id="qrCodeBtn" class="btn btn-danger btn-lg">QR Code</button>-->
+      <button class="btn btn-success btn-lg" id="pdfDownload">PDF</button>
+    </p>
+  </div>
+
+  <script src="../jquery/jquery.min.js"></script>
+  <script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../js/apiService.js" defer></script>
+  <script src="../js/pages/edlResult.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+.label-col {
+  width: 110px;
+  text-align: end;
+}
+
+#aircoil-image {
+  width: 100%;
+}
+
+.edlscore-description {
+  padding: 16px;
+  border: solid 6px white;
+}
+
+.edl-lv1 {
+  border-color: var(--edl-lv1);
+}
+
+.edl-lv2 {
+  border-color: var(--edl-lv2);
+}
+
+.edl-lv3 {
+  border-color: var(--edl-lv3);
+}
+
+.edl-lv4 {
+  border-color: var(--edl-lv4);
+}
+
+.edl-lv5 {
+  border-color: var(--edl-lv5);
+}
+
+@media print {
+  html, body {
+    height:100%; 
+    margin: 0 !important; 
+    padding: 0 !important;
+    overflow: hidden;
+  }
+  #form1 {
+    padding: 0 !important;
+    max-width: 100%;
+  }
+  #form1 > p {
+    display: none; /* Hide buttons in the print output */
+  }
+  img {
+    max-width: 100%; /* Ensure images fit within the page */
+  }
+}

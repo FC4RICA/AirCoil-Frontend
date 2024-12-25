@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <title>User Profile</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
+  <!-- Custom styles for this template -->
+  <link href="../css/full.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Prompt:400,600&subset=thai" rel="stylesheet">
+  <style type="text/css">
+    #logo {
+      max-width: 100%;
+      max-height: 100%;
+      top: 100;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin-top: 70px;
+    }
+
+    a, button {
+      display: block;
+      width: 200px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+        <p align="center">
+          <img src="../images/logo_l.png" width="75%" id="logo" alt=""><br><br>
+          <img id="profileImage" src="../prfl/toyota.png" width="25%" height="25%" alt="" /><br><br>
+        <h5 align="center">ชื่อผู้ใช้งาน: <span id="username"></span></h5>
+        </p><br>
+        <div class="container">
+          <div class="col-12" align="center" style="margin-bottom: 40px;">
+            <a href="./insert.html" class="btn btn-danger" role="button">อัพโหลดรูปภาพ</a><br><br>
+            <a href="./search.html" class="btn btn-danger" role="button">ดูผลการประเมิน</a><br><br>
+            <a href="./list-edit.html" class="btn btn-danger" role="button">แก้ไขข้อมูลรถ</a><br><br>
+            <div id="adminPanel" style="display: none;">
+              <a href="takereport.php" class="btn btn-danger" role="button">ADMIN PANEL</a><br><br>
+            </div>
+            <button id="logout" type="button" class="btn btn-danger" role="button">ออกจากระบบ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../jquery/jquery.min.js"></script>
+  <script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/apiService.js" defer></script>
+  <script src="../js/pages/profile.js" defer></script>
+</body>
+
+</html>

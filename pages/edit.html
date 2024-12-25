@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+	<title>Edit</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../bootstrap-5.3.3/css/bootstrap.min.css">
+	<link href="../css/full.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Prompt:400,600&amp;subset=thai" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="card">
+					<div class="card-header">
+						<h1>แก้ไขข้อมูลรถ</h1>
+					</div>
+					<div class="card-body">
+						<p>ศูนย์บริการ : <span id="service_center"></span></p>
+						<p>สาขา : <span id="branch"></span></p>
+            <p>Job No : <span id="jobId"></span></p>
+						<p>วันที่ทำการ : <span id="jobDateFull"></span></p>
+						<p>ชื่อผู้ใช้งาน : <span id="username"></span></p>
+            <br>
+
+            <h4>ข้อมูลรถ</h4>
+            <p>รุ่นรถ : <span id="carModel"></span></p>
+            <p>ป้ายทะเบียนรถ : <span id="license"></span></p>
+						<p>จังหวัด : <span id="province"></span></p>
+						<p>เลขไมล์ : <span id="mileInfo"></span></p>
+            <br>
+
+            <h3>เปลี่ยนข้อมูลรถ</h3>
+						<form class="needs-validation" novalidate id="formUploadPic" name="formUploadPic" method="post" enctype="multipart/form-data">
+							<label>ยี่ห้อรถ : <span id="carBrand"></span></label>
+							<br>
+							<input type="hidden" name="brand_id" value="0001">
+							<select name="new_model_id" id="new_model_id" class="form-control" required>
+								<option value="">กรุณาเลือกรุ่นรถ</option>
+								<!-- Models will be loaded by jQuery -->
+							</select>
+							<br>
+							<div class="input-group mb-3">
+								<input type="text" class="form-control" placeholder="ป้ายทะเบียนรถ" id="new_license_plate" name="new_license_plate" required>
+								<div class="invalid-feedback">กรุณากรอกป้ายทะเบียน</div>
+							</div>
+							<select name="new_province_id" id="new_province_id" class="form-control" required>
+								<option value="">กรุณาเลือกจังหวัด</option>
+								<!-- Provinces will be loaded by jQuery -->
+							</select>
+							<br>
+              <h4>รูปถ่ายคอยล์เย็น</h4>
+              <div class="row justify-content-center">
+                <img class="col-12 col-lg-6" id="airCoilImage" alt="Aircoil image">
+              </div>
+							<hr>
+							<p align="center">
+								<button id="submitBtn" type="submit" class="btn btn-success btn-lg">แก้ไข</button>
+								<button type="button" class="btn btn-danger btn-lg" onclick="window.location.href = 'list-edit.html';">ยกเลิก</button>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- jQuery and Bootstrap Scripts -->
+	<script src="../jquery/jquery.min.js"></script>
+	<script src="../bootstrap-5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/needValidation.js" ></script>
+  <script src="../js/apiService.js" defer></script>
+  <script src="../js/pages/edit.js" defer></script>
+</body>
+</html>

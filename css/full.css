@@ -1,0 +1,40 @@
+/*!
+ * Start Bootstrap - Full (https://startbootstrap.com/template-overviews/full)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-full/blob/master/LICENSE)
+ */
+
+:root {
+  --edl-lv1: #e73622;
+  --edl-lv2: #d0732e;
+  --edl-lv3: #b67b13;
+  --edl-lv4: #529629;
+  --edl-lv5: #09a176;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Prompt', sans-serif;
+}
+#fc{
+  color: #FF563F;
+}
+#btc{
+  background-color: #FF563F;
+  color: white;
+}
+#btc1{
+  background-color: #7FE099;
+  color: white;
+}
+p {
+  margin-bottom: 0px;
+}
+
+.aircoil-image-container {
+  aspect-ratio: 4/3;
+}
